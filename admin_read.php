@@ -37,31 +37,9 @@ if ($status == false) {
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>管理者画面（登録者リスト）</title>
+	<title>管理者画面（職員一覧）</title>
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="staffpage.css">
-	<style>
-		table {
-			width: 100%;
-			border-collapse: collapse;
-			border-spacing: 0;
-			font-size: .9em;
-		}
-
-		table th,
-		table td {
-			padding: 5px 0;
-			text-align: center;
-		}
-
-		table th {
-			background-color: #eee;
-		}
-
-		table tr:nth-child(even) {
-			background-color: #eee;
-		}
-	</style>
 </head>
 
 <body>
@@ -71,20 +49,20 @@ if ($status == false) {
 			return select;
 		}
 	</script>
-	<div class="admin_read_main">
+	<div class="adminreadmain">
 		<p class="msg">&emsp;管理者: <?= $_SESSION['staffname'] ?>さん</p>
-		<p class="adminpagetitle">登録者リスト</p>
+		<p class="adminpagetitle">職員一覧</p>
 		&emsp;
 		<a href="admin_login.php" class="linkstyle">管理者ログイン画面</a> /
 		<a href="staff_register.php" class="linkstyle">アカウント登録画面</a> /
 		<!-- <a href="shinsei_graph.php" class="linkstyle">データ編集画面</a> /  -->
 		<a href="admin_logout.php" class="linkstyle">ログアウト</a>
-		<div class="staff_list">
+		<div class="stafflistwrap">
 			<fieldset>
-				<table>
+				<table class="stafflist">
 					<thead>
 						<tr>
-							<th>担当者ID</th>
+							<th>職員ID</th>
 							<th>パスワード</th>
 							<th>管理者権限</th>
 							<th>編集</th>

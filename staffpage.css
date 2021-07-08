@@ -199,7 +199,7 @@ p.adminpagetitle {
 }
 
 /* 管理者画面 */
-div.admin_read_main {
+div.adminreadmain {
 	width: 87%;
 	height: 25.85em;
 	margin: 2.5em auto;
@@ -210,8 +210,30 @@ div.admin_read_main {
 	background-color: #fff;
 }
 
-div.staff_list{
+div.stafflistwrap{
 	padding: 0;
 	overflow: auto;
 	height: 17em;
+}
+
+/* 職員一覧 */
+table.stafflist {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: .9em;
+}
+
+table.stafflist th,
+table.stafflist td {
+	padding: 5px 0;
+	text-align: center;
+}
+
+table.stafflist th {
+	background-color: #eee;
+}
+
+table.stafflist tr:nth-child(even) {
+	background-color: #eee;
 }
