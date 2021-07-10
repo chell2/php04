@@ -53,7 +53,7 @@ if ($status == false) {
 					管理者権限: <input type="number" name="is_admin" step="1" min="0" max="1" value="<?= $record["is_admin"] ?>">
 				</div>
 				<div class="loginbtnwrap">
-					<button class="loginbtn" onclick="admcheck()">コウシン</button>
+					<button class="loginbtn">コウシン</button>
 				</div>
 				<input type="hidden" name="is_deleted" value="<?= $record["is_deleted"] ?>">
 				<input type="hidden" name="id" value="<?= $record["id"] ?>">
@@ -61,8 +61,6 @@ if ($status == false) {
 			</fieldset>
 		</form>
 	</div>
-	<script>
-	</script>
 </body>
 
 </html>
