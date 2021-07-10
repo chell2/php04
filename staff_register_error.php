@@ -17,7 +17,7 @@
 			</div>
 			<p class="errormsg">すでに登録されているユーザです</p>
 			<div class="returnbtnwrap">
-				<a href="staff_login.php" class="returnbtn">ログイン画面に戻る</a>
+				<a href="admin_read.php" class="returnbtn">職員一覧に戻る</a>
 			</div>
 		</fieldset>
 	</form>

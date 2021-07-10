@@ -1,3 +1,9 @@
+<?php
+session_start();
+include("functions.php");
+check_session_id();
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -28,8 +34,9 @@
 				<button class="loginbtn">トウロク</button>
 			</div>
 			<div class="linkwrap">
-				<a href="staff_login.php" class="linkstyle">*ログイン画面（担当者）</a>
+				<a href="admin_read.php" class="linkstyle">*職員一覧</a>
 			</div>
+			<input type="hidden" name="adminname" value="<?= $_SESSION['staffname'] ?>">
 		</fieldset>
 	</form>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

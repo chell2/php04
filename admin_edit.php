@@ -39,7 +39,7 @@ if ($status == false) {
 		<p class="msg">&emsp;管理者: <?= $_SESSION['staffname'] ?>さん</p>
 		<p class="adminpagetitle">アカウント編集</p>
 		&emsp;
-		<a href="admin_read.php" class="linkstyle">職員リスト</a> /
+		<a href="admin_read.php" class="linkstyle">職員一覧</a> /
 		<a href="admin_logout.php" class="linkstyle">ログアウト</a>
 		<form action="admin_update.php" method="POST">
 			<fieldset>
@@ -53,13 +53,16 @@ if ($status == false) {
 					管理者権限: <input type="number" name="is_admin" step="1" min="0" max="1" value="<?= $record["is_admin"] ?>">
 				</div>
 				<div class="loginbtnwrap">
-					<button class="loginbtn">コウシン</button>
+					<button class="loginbtn" onclick="admcheck()">コウシン</button>
 				</div>
 				<input type="hidden" name="is_deleted" value="<?= $record["is_deleted"] ?>">
 				<input type="hidden" name="id" value="<?= $record["id"] ?>">
+				<input type="hidden" name="adminname" value="<?= $_SESSION['staffname'] ?>">
 			</fieldset>
 		</form>
 	</div>
+	<script>
+	</script>
 </body>
 
 </html>
